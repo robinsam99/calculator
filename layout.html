@@ -15,7 +15,7 @@
                 
                 
                         <div class ="form-group">
-                                <input type="text" class="form-control" id="Calculator">
+                                <input type="number" class="form-control" id="input">
                                 
                                         
                                 
@@ -24,11 +24,11 @@
                 </div>
                 <div class="row">
                         <div class="col-sm-1">
-                                <button type="button" id="+" class="btn btn-success btn-block btn1" onclick="add()">
+                                <button type="button" id="+" class="btn btn-success btn-block btn1" onclick="add_test(this.id)">
                                 +</button>
                         </div>
                         <div class="col-sm-1">
-                                <button type="button" id="-" class="btn btn-success btn-block btn1" onclick="sub()">-
+                                <button type="button" id="-" class="btn btn-success btn-block btn1" onclick="sub(this.id)">-
                                 </button>
                         </div>
                         <div class="col-sm-1">
@@ -43,21 +43,26 @@
         
                 <div class="row">
                                 <div class="col-sm-1">
-                                        <button type="button" id="*" class="btn btn-success btn-block btn1" onclick="prod()">
+                                        <button type="button" id="*" class="btn btn-success btn-block btn1" onclick="prod(this.id)">
                                         *</button>
                                 </div>
                                 <div class="col-sm-1">
-                                        <button type="button" id="/" class="btn btn-success btn-block btn1" onclick="divide()">/
+                                        <button type="button" id="/" class="btn btn-success btn-block btn1" onclick="divide(this.id)">/
                                         </button>
                                 </div>
                                 <div class="col-sm-1">
-                                        <button type="button" id="=" class="btrn btn success btn-block btn1" onclick="eq()">=
+                                        <button type="button" id="=" class="btrn btn success btn-block btn1" onclick="eq_final()">=
                                         </button>
                                  </div>
         
                  </div>         
-        </div>
-
+                 <div class = "row">
+                                <p id = "test"></p>
+                </div>
+                        
+                </div>
+        
+        <script src="calc.js"></script>
 
 
  
